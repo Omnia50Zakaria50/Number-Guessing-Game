@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>number guessing game</h1>
+    <p>pick a number between 1 to 20</p>
+    <label for="guessField"> enter a guess </label>
+    <input
+      type="text"
+      name="guessNumber"
+      id="guessField"
+      required
+      autofocus
+    /><br />
+    <input
+      type="button"
+      value="submit"
+      id="submitButton"
+      onclick="callAlert()"
+    />
+    <p class="copy">&copy;this game created by omnia XD</p>
+    <script src="main.js"></script>
+
+    <script>
+      function callAlert(msg) {
+        alert(msg, 3000);
+      }
+    </script>
+  </body>
+</html>
